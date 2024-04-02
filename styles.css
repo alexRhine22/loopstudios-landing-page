@@ -1,0 +1,157 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+  --font-atlata: "Alata", sans-serif;
+  --font-josefin: "Josefin Sans", sans-serif;
+  font-size: 0.9375rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1148px;
+  padding-inline: 1rem;
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--black);
+  padding-block-start: 70px;
+  padding-block-end: 70px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .footer-grid {
+    row-gap: 42px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+  }
+}
+
+.footer__logo {
+  display: block;
+}
+.footer__logo-link {
+  margin-inline: auto;
+  display: inline-block;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__logo-link {
+    margin-inline: 0;
+  }
+}
+
+.footer__list {
+  color: var(--white);
+  list-style: none;
+  margin-block-start: 62px;
+  margin-block-end: 48px;
+  margin-inline: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer__list li:not(:first-of-type) {
+  margin-block-start: 32px;
+}
+@media (min-width: 768px) {
+  .footer__list {
+    order: 3;
+    margin-block: 0;
+    display: flex;
+  }
+  .footer__list li:not(:first-of-type) {
+    margin-block-start: 0px;
+    margin-inline-start: 32px;
+  }
+}
+
+.footer__list-link {
+  color: var(--white);
+  font-family: var(--font-atlata);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.footer__list-link::after,
+.footer__social-link::after {
+  transition: width 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 0;
+  display: block;
+  left: 50%;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: var(--white);
+}
+.footer__list-link:hover::after {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  .footer__list-link {
+    font-size: 15px;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social-list li:not(:first-of-type) {
+  margin-inline-start: 20px;
+}
+.footer__social-link {
+  display: block;
+  position: relative;
+}
+.footer__social-link:hover::after {
+  width: 100%;
+}
+.footer__social-link-img {
+  display: block;
+  object-fit: contain;
+}
+@media (min-width: 768px) {
+  .footer__social-list {
+    justify-content: flex-end;
+    order: 2;
+  }
+}
+
+.footer__legal {
+  font-family: var(--font-atlata);
+  color: var(--dark-gray);
+  margin-block-end: 0;
+  margin-block-start: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__legal {
+    margin-block-start: 0px;
+    text-align: right;
+    order: 4;
+  }
+}
