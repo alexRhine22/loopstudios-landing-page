@@ -5,6 +5,7 @@
   --very-dark-gray: hsl(0, 0%, 41%);
   --font-atlata: 'Alata', sans-serif;
   --font-josefin: 'Josefin Sans', sans-serif;
+  font-family: var(--font-atlata);
   font-size: 0.9375rem;
 }
 
@@ -14,6 +15,29 @@
 
 body {
   margin: 0;
+}
+
+.title {
+  color: var(--black);
+  font-family: var(--font-josefin);
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: var(--font-atlata);
+  color: var(--dark-gray);
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  margin-block: 0;
+}
+@media (min-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
 }
 
 .mt-lg {
@@ -32,6 +56,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .text-center-mobile {
+    text-align: center;
+  }
   .hide-mobile {
     display: none !important;
   }
@@ -44,8 +71,13 @@ body {
 
 .title-with-button-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .title-with-button-wrapper {
+    justify-content: space-between;
+  }
 }
 
 .button {
@@ -83,16 +115,49 @@ body {
   }
 }
 
-.title {
-  color: var(--black);
-  font-family: var(--font-josefin);
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0;
-  line-height: normal;
-  text-transform: uppercase;
+/* LEADERSHIP SECTION */
+.leadership-section__wrapper {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-block-end: 130px;
+}
+.leadership-section__image-wrapper {
+  display: block;
+  width: 100%;
+  flex: 0 0 100%;
+}
+.leadership-section__image {
+  vertical-align: middle;
+  width: 100%;
+  object-fit: cover;
+}
+.leadership-section__content {
+  flex: 0 0 100%;
+  padding-block-start: 60px;
+  background-color: var(--white);
+}
+.leadership-section__content-text {
+  margin-block-start: 40px;
+}
+@media (min-width: 1024px) {
+  .leadership-section__image-wrapper {
+    display: block;
+    flex: 0 0 65%;
+  }
+  .leadership-section__content {
+    flex: 0 0 50%;
+    padding-inline-start: 80px;
+    padding-block-start: 96px;
+    margin-inline-start: -15%;
+  }
+  .leadership-section__wrapper {
+    margin-block-end: 180px;
+    flex-direction: row;
+  }
 }
 
+/* CREATION CARD */
 .creation-card-grid {
   padding-inline-start: 0;
   list-style-type: none;
