@@ -1,0 +1,15 @@
+{
+  "name": "loopstudios-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alexRhine22/loopstudios-landing-page.git",
+  "author": "alexRhine22 <alextherhine@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "prettier": "^3.2.5"
+  }
+}
