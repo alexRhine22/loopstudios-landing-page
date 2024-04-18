@@ -469,22 +469,6 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
-.footer__list-link::after,
-.footer__social-link::after {
-  transition: width 0.2s ease-in-out;
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  width: 0;
-  display: block;
-  left: 50%;
-  height: 2px;
-  transform: translateX(-50%);
-  background-color: var(--white);
-}
-.footer__list-link:hover::after {
-  width: 50%;
-}
 @media (min-width: 768px) {
   .footer__list-link {
     font-size: 15px;
@@ -505,9 +489,6 @@ body {
 .footer__social-link {
   display: block;
   position: relative;
-}
-.footer__social-link:hover::after {
-  width: 100%;
 }
 .footer__social-link-img {
   display: block;
