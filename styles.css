@@ -143,7 +143,7 @@ body {
 
 /* HEADER */
 .header {
-  background-image: url('../images/mobile/image-hero.jpg');
+  background-image: url('./images/mobile/image-hero.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ body {
 
 @media (min-width: 768px) {
   .header {
-    background-image: url('../images/desktop/image-hero.jpg');
+    background-image: url('./images/desktop/image-hero.jpg');
   }
 }
 
