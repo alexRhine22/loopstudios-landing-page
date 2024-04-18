@@ -16,6 +16,56 @@
     <title>Loopstudios landing page</title>
   </head>
   <body>
+    <header id="header" class="header">
+      <div class="container header__container">
+        <div class="header__nav-bar-wrapper">
+          <a class="header__logo" href="./" aria-label="home">
+            <img src="./images/logo.svg" alt="Loopstudios logo" />
+          </a>
+
+          <button
+            aria-controls="header"
+            aria-expanded="false"
+            class="header__button"
+            id="mobile-menu-button"
+            type="button"
+          >
+            <img src="./images/hamburger.svg" alt="" />
+          </button>
+        </div>
+
+        <nav id="header-nav" class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a class="header__nav-link fancy-link-hover" href="#"> about </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link fancy-link-hover" href="#">
+                careers
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link fancy-link-hover" href="#"> events </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link fancy-link-hover" href="#">
+                products
+              </a>
+            </li>
+            <li class="header__nav-list-item">
+              <a class="header__nav-link fancy-link-hover" href="#">
+                support
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="container header__content">
+        <h1 class="header__title">immersive experiences that deliver</h1>
+      </div>
+    </header>
+
     <main class="main">
       <section class="container">
         <div class="leadership-section__wrapper">
@@ -286,7 +336,7 @@
               </a>
             </li>
             <li>
-              <a class="footer__social-link" href="#">
+              <a class="footer__social-link fancy-link-hover--full" href="#">
                 <img
                   class="footer__social-link-img"
                   src="./images/instagram.svg"
